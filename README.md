@@ -9,6 +9,7 @@ This is first lab of Software for embedded that consists of 3 problems. The boar
 ```console
 User:~$ mbed config -G GCC_ARM-path "C:\Program Files (x86)\GNU Tools Arm Embedded\9 2019-q4-major\bin"
 ```
+
 ## Run this command to flash the code to the board. 
 ```console
 User:~$ mbed compile --target DISCO_L475VG_IOT01A --toolchain GCC_ARM --flash
