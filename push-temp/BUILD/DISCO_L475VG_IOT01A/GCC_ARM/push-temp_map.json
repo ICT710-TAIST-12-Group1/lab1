@@ -1,0 +1,219 @@
+[
+    {
+        "module": "BSP_B-L475E-IOT01\\Drivers", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 212, 
+            ".data": 28, 
+            ".bss-delta": 0, 
+            ".text": 964
+        }
+    }, 
+    {
+        "module": "[fill]", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 20, 
+            ".bss": 35, 
+            ".data": 12, 
+            ".bss-delta": 0, 
+            ".text": 278
+        }
+    }, 
+    {
+        "module": "[lib]\\c.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 89, 
+            ".data": 2474, 
+            ".bss-delta": 0, 
+            ".text": 52520
+        }
+    }, 
+    {
+        "module": "[lib]\\gcc.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 7196
+        }
+    }, 
+    {
+        "module": "[lib]\\misc", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 28, 
+            ".data": 4, 
+            ".bss-delta": 0, 
+            ".text": 180
+        }
+    }, 
+    {
+        "module": "[lib]\\nosys.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 32
+        }
+    }, 
+    {
+        "module": "[lib]\\stdc++.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 44, 
+            ".data": 8, 
+            ".bss-delta": 0, 
+            ".text": 6052
+        }
+    }, 
+    {
+        "module": "http_main.o", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": -20, 
+            ".bss": 540, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 4648
+        }
+    }, 
+    {
+        "module": "mbed-http\\http_parser", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 8276
+        }
+    }, 
+    {
+        "module": "mbed-os\\components", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 4, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 310
+        }
+    }, 
+    {
+        "module": "mbed-os\\drivers", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 928, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 2412
+        }
+    }, 
+    {
+        "module": "mbed-os\\events", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 3108, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 1482
+        }
+    }, 
+    {
+        "module": "mbed-os\\features", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 348, 
+            ".data": 158, 
+            ".bss-delta": 0, 
+            ".text": 119278
+        }
+    }, 
+    {
+        "module": "mbed-os\\hal", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 130, 
+            ".data": 8, 
+            ".bss-delta": 0, 
+            ".text": 1770
+        }
+    }, 
+    {
+        "module": "mbed-os\\platform", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 481, 
+            ".data": 276, 
+            ".bss-delta": 0, 
+            ".text": 6816
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 6236, 
+            ".data": 168, 
+            ".bss-delta": 0, 
+            ".text": 10194
+        }
+    }, 
+    {
+        "module": "mbed-os\\targets", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 1571, 
+            ".data": 8, 
+            ".bss-delta": 0, 
+            ".text": 19994
+        }
+    }, 
+    {
+        "module": "wifi-ism43362\\ISM43362", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 2, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 6172
+        }
+    }, 
+    {
+        "module": "wifi-ism43362\\ISM43362Interface.o", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 884, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 3414
+        }
+    }, 
+    {
+        "summary": {
+            "static_ram": 17784, 
+            "total_flash_delta": 0, 
+            "static_ram_delta": 0, 
+            "total_flash": 255132
+        }
+    }
+]
