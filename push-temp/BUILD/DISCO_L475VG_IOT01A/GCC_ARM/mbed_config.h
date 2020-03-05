@@ -25,8 +25,8 @@
 #define CLOCK_SOURCE                                                          USE_PLL_MSI                                                                                      // set by target:DISCO_L475VG_IOT01A
 #define HTTP_RECEIVE_BUFFER_SIZE                                              8192                                                                                             // set by library:mbed-http
 #define LPTICKER_DELAY_TICKS                                                  0                                                                                                // set by target:DISCO_L475VG_IOT01A
-#define MBED_CONF_APP_WIFI_PASSWORD                                           "p0864158549"                                                                                    // set by application
-#define MBED_CONF_APP_WIFI_SSID                                               "PPhone"                                                                                         // set by application
+#define MBED_CONF_APP_WIFI_PASSWORD                                           "XXMYPH4K"                                                                                       // set by application
+#define MBED_CONF_APP_WIFI_SSID                                               "true_home2G_454"                                                                                // set by application
 #define MBED_CONF_ATMEL_RF_ASSUME_SPACED_SPI                                  1                                                                                                // set by library:atmel-rf[STM]
 #define MBED_CONF_ATMEL_RF_FULL_SPI_SPEED                                     7500000                                                                                          // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_FULL_SPI_SPEED_BYTE_SPACING                        250                                                                                              // set by library:atmel-rf

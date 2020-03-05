@@ -4,10 +4,7 @@
 #include "stm32l475e_iot01_tsensor.h"
 #include "stm32l475e_iot01_hsensor.h"
     
-DigitalOut led(LED1);
-InterruptIn button(USER_BUTTON);
-Thread t;
-EventQueue queue(5 * EVENTS_EVENT_SIZE);
+
 Serial pc(USBTX, USBRX);
 WiFiInterface *wifi;
 
@@ -46,7 +43,6 @@ void read_temp(){
     BSP_HSENSOR_Init();
 
          sensor_value_temp = BSP_TSENSOR_ReadTemp();
-        //  pc.printf("\nTEMPERATURE = %d degC\n", sensor_value_temp);
          sensor_value_hum = BSP_HSENSOR_ReadHumidity();
          
 
@@ -93,7 +89,6 @@ void pressed_handler() {
     printf("Gateway: %s\n", wifi->get_gateway());
     printf("RSSI: %d\n\n", wifi->get_rssi());  
 
-    // wifi->disconnect();
     pc.printf("\nDone\n");    
 }
 
@@ -103,40 +98,28 @@ int main() {
         printf("ERROR: No WiFiInterface found.\n");
         return -1;
     }
-pressed_handler();
-    // t.start(callback(&queue, &EventQueue::dispatch_forever));
-    // button.fall(queue.event(pressed_handler));
+    pressed_handler();
     pc.printf("Starting\n");
     while(1) {
-        
-        // led = !led;        
+            
         read_temp();
-{
-        HttpsRequest* request = new HttpsRequest(wifi, SSL_CA_PEM, HTTP_POST, "https://testysoftware.herokuapp.com/temp");
+    {
+        HttpsRequest* request = new HttpsRequest(wifi, SSL_CA_PEM, HTTP_POST, "https://testysoftware.herokuapp.com/update");
         request->set_header("Content-Type", "application/json");
         char body[100];
-        sprintf(body, "{\"temp\": %d}", sensor_value_temp);
+        sprintf(body, "{\"temp\": %d,\"humid\":%d}", sensor_value_temp,sensor_value_hum);
         HttpResponse* response = request->send(body, strlen(body));
         printf("\n----- HTTPS POST response -----\n");
         printf("status is %d - %s\n", response->get_status_code(), response->get_status_message());
         
         delete request;
         pc.printf("\nTEMPERATURE = %d degC\n", sensor_value_temp);
-    }
-{
-        HttpsRequest* request = new HttpsRequest(wifi, SSL_CA_PEM, HTTP_POST, "https://testysoftware.herokuapp.com/hum");
-        request->set_header("Content-Type", "application/json");
-        char body[100];
-        sprintf(body, "{\"hum\": %d}", sensor_value_hum);
-        HttpResponse* response = request->send(body, strlen(body));
-        printf("\n----- HTTPS POST response -----\n");
-        printf("status is %d - %s\n", response->get_status_code(), response->get_status_message());
-        
-        delete request;
-        pc.printf("HUMIDITY    = %d \n", sensor_value_hum);
+        pc.printf("\nhuminity = %d \n", sensor_value_hum);
+
     }
 
-    ThisThread::sleep_for(60000);
+
+    ThisThread::sleep_for(20000);
     }
 
 }

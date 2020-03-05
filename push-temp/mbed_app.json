@@ -2,12 +2,12 @@
     "config": {
         "wifi-ssid": {
             "help": "WiFi SSID",
-            "value": "\"PPhone\""
+            "value": "\"true_home2G_454\""
 
         },
         "wifi-password": {
             "help": "WiFi Password",
-            "value": "\"p0864158549\""
+            "value": "\"XXMYPH4K\""
         }
     },
     "target_overrides": {
