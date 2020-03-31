@@ -28,6 +28,16 @@ we use
  if more than 1000 == no car in the lot
 ```
 - in order to test the system 
+    - for reed data testing
+        **Test case**: VL53L0X module
+        **Discription**: Verify that VL53L0X module is work properly
+        **Test procedure**:	1. activate the sensor.
+				    2. change the distance.
+				    3. check the value from sensor.
+        **Test data/device**: the values from sensor.
+        **Expected results**: the value from sensor will be changed, when the distance change. 
+        **Actual results**: Sensor return a random value when object is out of range(2m).
+
     - for the threshold value testing   
         **Test case**: Threshold value  
         **Description**: Determine accurate threshold value to define that a parking lot is empty or occupied.  
