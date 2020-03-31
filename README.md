@@ -29,6 +29,10 @@ we use
 ```
 - in order to test the system 
     - we use [mbed](https://os.mbed.com/docs/mbed-os/v5.15/tools/testing.html) as testing system
+    ```
+     mbed test -t GCC_ARM -m auto -v --source . --source ../mbed-os --source VL53L0X
+    ```
+    - the result will show like this ![testing-result](./testing-result.png) [it will take some time]
 
 
 
