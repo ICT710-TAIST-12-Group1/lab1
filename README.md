@@ -42,9 +42,12 @@ we use
         **Test case**: Threshold value  
         **Description**: Determine accurate threshold value to define that a parking lot is empty or occupied.  
         **Test procedure**:   
-        1.	Get data from the sensor  
-        2.	Examine accuracy of the data from the sensor (when it says 1000 mm. is it real 1000 mm.) by set-up actual situation of 1 meter and other meter ranges.  
-        3.	Calculate the actual size of a car parking lot. In order to get the threshold value. According to the information that I’ve got the standard of the parking lot is around 2.4 meters and car height is around 1.47 meters. Therefore, the time of flight should be around 1 meter for occupied and if more than 1 meter is empty.   
+        1.	Set-up the board to get data properly.    
+        2.	Examine accuracy of the data from the sensor by set-up actual environmental situation of the parking with car and without car.     
+            - set board on the top of the ceiling, facing the sensor down to the floor.     
+            - get data from the sensor in both situations, with car and without car.  
+        3. Compare the data difference between with car and without a car.   
+        4. you will get the threshold.  
 
         **Test data/device**: The values from time of flight sensor.    
         **Expected results**: Knowing the car parking lot is empty or occupied.   
