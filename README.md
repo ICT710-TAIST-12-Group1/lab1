@@ -35,6 +35,7 @@ we use
         1.	Get data from the sensor  
         2.	Examine accuracy of the data from the sensor (when it says 1000 mm. is it real 1000 mm.) by set-up actual situation of 1 meter and other meter ranges.  
         3.	Calculate the actual size of a car parking lot. In order to get the threshold value. According to the information that I’ve got the standard of the parking lot is around 2.4 meters and car height is around 1.47 meters. Therefore, the time of flight should be around 1 meter for occupied and if more than 1 meter is empty.   
+
         **Test data/device**: The values from time of flight sensor.    
         **Expected results**: Knowing the car parking lot is empty or occupied.   
         **Actual results**: The sensor is too weak to sense the time of flight that more than around 1.5 meters. Hence, we may not sure that if the data lost coming from "Empty" or "sensor is wrong".    
