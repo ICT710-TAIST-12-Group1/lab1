@@ -47,7 +47,7 @@ we use
             - set board on the top of the ceiling, facing the sensor down to the floor.     
             - get data from the sensor in both situations, with car and without car.  
         3. Compare the data difference between with car and without a car.   
-        4. you will get the threshold.  
+        4. you will get the threshold value.  
 
         **Test data/device**: The values from time of flight sensor.    
         **Expected results**: Knowing the car parking lot is empty or occupied.   
