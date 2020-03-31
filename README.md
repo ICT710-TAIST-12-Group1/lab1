@@ -19,8 +19,8 @@ This is third lab of Software for embedded that consists of 3 problems. The boar
 # Car-parking Group work assignment for Hardware part
 This section is to explain the system in hardware part of Car-parking group [ToF folder](https://github.com/ICT710-TAIST-12-Group1/software_Taist/tree/master/ToF)
 
-we use 
-- ![DISCO_L475VG_IOT01A](./image/DISCO_L475VG_IOT01A.jpg)  
+we use  
+![DISCO_L475VG_IOT01A](./image/DISCO_L475VG_IOT01A.jpg)  
 - Time-of-Flight and gesture-detection sensor (VL53L0X) of DISCO_L475VG_IOT01A board in hardware part (as red circle)
 - [VL53L0X](https://os.mbed.com/teams/ST/code/VL53L0X/#e9269ff624ed) library 
 - According to the standard size of car-park-lot the high is 2.4 meter and normal car height is around 1.47 meter referd by this site 
