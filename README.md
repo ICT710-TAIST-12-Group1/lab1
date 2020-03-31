@@ -51,13 +51,21 @@ we use
         **Actual results**: The sensor is too weak to sense the time of flight that more than around 1.5 meters. Hence, we may not sure that if the data lost coming from "Empty" or "sensor is wrong".    
 	
 	**Test case**: Mqtt
+	
         **Discription**: To send message through mqtt. 
+	
         **Test procedure**:	    1. Read data from sensor.
+	
 				    2. Publish by mqtt.
+				    
 				    3. Use MQTTBox to subscibe.
+				    
 				    4. Check message.
+				    
         **Test data/device**: The values from sensor.
+	
         **Expected results**: Recieve a correct message in MQTTBox.
+	
         **Actual results**: Sensor can read the data but it cannot publish to MQTTBox.
 
 
