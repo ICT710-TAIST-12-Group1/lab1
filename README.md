@@ -28,7 +28,7 @@ we use
  if more than 1000 == no car in the lot
 ```
 - in order to test the system 
-    - we use [mbed](https://os.mbed.com/docs/mbed-os/v5.15/tools/test-and-debug.html) as testing system and debugging tools
+    - we use [mbed](https://os.mbed.com/docs/mbed-os/v5.15/tools/test-and-debug.html) as testing system and debugging tools [black box]
     ```
      mbed test -t GCC_ARM -m auto -v --source . --source ../mbed-os --source VL53L0X
     ```
