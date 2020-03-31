@@ -32,7 +32,7 @@ we use
     ```
      mbed test -t GCC_ARM -m auto -v --source . --source ../mbed-os --source VL53L0X
     ```
-    - the result will show like this ![testing-result](./testing-result.png) [it will take some time]
+    - the result will show like this ![testing-result](./image/testing-result.png) [it will take some time]
 
 
 
