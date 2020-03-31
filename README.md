@@ -30,20 +30,13 @@ we use
 - in order to test the system 
     - for reed data testing
         **Test case**: VL53L0X module
-	
         **Discription**: Verify that VL53L0X module is work properly
-	
-        **Test procedure**:
-	1. activate the sensor.
-	2. change the distance.
-	3. check the value from sensor.
-	
+        **Test procedure**:	1. activate the sensor.
+				    2. change the distance.
+				    3. check the value from sensor.
         **Test data/device**: the values from sensor.
-	
         **Expected results**: the value from sensor will be changed, when the distance change. 
-	
         **Actual results**: Sensor return a random value when object is out of range(2m).
-	
 
     - for the threshold value testing   
         **Test case**: Threshold value  
@@ -56,6 +49,17 @@ we use
         **Test data/device**: The values from time of flight sensor.    
         **Expected results**: Knowing the car parking lot is empty or occupied.   
         **Actual results**: The sensor is too weak to sense the time of flight that more than around 1.5 meters. Hence, we may not sure that if the data lost coming from "Empty" or "sensor is wrong".    
+	
+	**Test case**: Mqtt
+        **Discription**: To send message through mqtt. 
+        **Test procedure**:	    1. Read data from sensor.
+				    2. Publish by mqtt.
+				    3. Use MQTTBox to subscibe.
+				    4. Check message.
+        **Test data/device**: The values from sensor.
+        **Expected results**: Recieve a correct message in MQTTBox.
+        **Actual results**: Sensor can read the data but it cannot publish to MQTTBox.
+
 
     - we use [mbed](https://os.mbed.com/docs/mbed-os/v5.15/tools/test-and-debug.html) as testing system and debugging tools [black box]
     ```
