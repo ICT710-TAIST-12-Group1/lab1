@@ -610,6 +610,30 @@ public:
 
     /**
      *
+     * @brief Get the 53L0 device
+     *
+     * To be called to retrive the internal device descriptor to allow usage of 
+     * low level API having device as parameter. To be called  after set_device_address()
+     * (if any).
+     *
+     * @par Function Description
+     * To be called if low level API usage is needed as those functions requires
+     * device as a parameter.TICINIT.
+     *
+     * @note This function return a pointer to an object internal structure
+     *
+     * @param   dev                   ptr to ptr to Device Handle
+     * @return  VL53L0X_ERROR_NONE     Success
+     * @return  "Other error code"    See ::VL53L0X_Error
+     */
+    VL53L0X_Error vl53l0x_get_device(VL53L0X_DEV *dev)
+{
+   *dev = _device;
+   return VL53L0X_ERROR_NONE;
+}             
+
+    /**
+     *
      * @brief One time device initialization
      *
      * To be called once and only once after device is brought out of reset
