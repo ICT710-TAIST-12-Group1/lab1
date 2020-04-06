@@ -66,8 +66,7 @@ we use
         2.	Publish by mqtt.  
         3.	Use MQTTBox to subscibe.  
         4.	Check message.  
-	
-	**Test data/device**: The values from sensor.  
+        **Test data/device**: The values from sensor.  
         **Expected results**: Recieve a correct message in MQTTBox.  
         **Actual results**: Sensor can read the data but it cannot publish to MQTTBox.  
 
